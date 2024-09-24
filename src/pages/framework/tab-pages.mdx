@@ -44,6 +44,21 @@ function DeltaFlyerPage() {
 export default DeltaFlyerPage
 ```
 
+4. Introduced in `manifest`:
+
+```json filename="package.json"
+"web_accessible_resources": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "resources": [
+          "tabs/delta-flyer.html"
+        ]
+      }
+]
+```
+
 Your tab page will be available under the `/tabs` path in the extension bundle. It will be accessible from the browser under the URL:
 
 ```
